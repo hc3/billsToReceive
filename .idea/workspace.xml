@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c27436a2-08b3-4165-a982-122aacf98277" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/cliente/cliente.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.env.example" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/billToReceive.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/blade.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/CidadesDoBrasil.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Cidade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Cliente.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Console/Commands/Inspire.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Console/Kernel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Contato.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Endereco.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Estado.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Events/Event.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Exceptions/Handler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Controllers/Auth/AuthController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Controllers/Auth/PasswordController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Controllers/Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Kernel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Middleware/Authenticate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Middleware/EncryptCookies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/Requests/Request.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Http/routes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Jobs/Job.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Listeners/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Policies/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Providers/AppServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Providers/AuthServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Providers/EventServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/Providers/RouteServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/app/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/artisan" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/bootstrap/app.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/bootstrap/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/bootstrap/cache/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/app.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/broadcasting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/compile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/filesystems.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/mail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/queue.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/services.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/session.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/config/view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/factories/ModelFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/2016_04_09_162805_create_clientes_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/2016_04_09_165112_create_contatos_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/2016_04_09_165123_create_enderecos_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/2016_04_09_171805_create_cidades_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/migrations/2016_04_09_171811_create_estados_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableACSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableALSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableAMSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableAPSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableBASeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableCESeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableDFSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableESSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableGOSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableMASeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableMGSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableMSSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableMTSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTablePASeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTablePBSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTablePESeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTablePISeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTablePRSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableRJSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableRNSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableROSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableRRSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableRSSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableSCSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableSESeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableSPSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/CidadesTableTOSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/DatabaseSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/database/seeds/EstadosTableSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/public/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/public/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/public/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/public/web.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/assets/sass/app.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/lang/en/auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/lang/en/pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/lang/en/passwords.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/lang/en/validation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/views/errors/503.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/views/vendor/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/resources/views/welcome.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/server.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/storage/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/storage/app/public/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/storage/framework/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/storage/framework/cache/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/storage/framework/sessions/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/storage/framework/views/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/storage/logs/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/tests/ExampleTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/billToReceive/tests/TestCase.php" afterPath="" />
+    </list>
+    <ignored path="billsToReceive.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="billsToReceive" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ClienteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClienteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.375">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cliente.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/cliente/cliente.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Cliente.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Cliente.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ClienteController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="30" />
+    <option name="width" value="1368" />
+    <option name="height" value="739" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cliente" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="billsToReceive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c27436a2-08b3-4165-a982-122aacf98277" name="Default" comment="" />
+      <created>1460230056336</created>
+      <option name="number" value="Default" />
+      <updated>1460230056336</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70826304">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Cidade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05059022">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClienteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cliente/cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
