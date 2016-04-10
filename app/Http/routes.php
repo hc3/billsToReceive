@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::get('/listaCli','ClienteController@listaCliJSON');
 
+Route::get('/cliente',function() {
+    return view('cliente.cliente');
+});
+
 
 Route::group(['middleware' => ['web']], function () {
     Route::get('/listaCli','ClienteController@listaCliJSON');

@@ -10,7 +10,7 @@ use App\Cliente;
 class ClienteController extends Controller
 {
     public function listaCliJSON() {
-        $clientes = Cliente::all();
+        $clientes = Cliente::with('endereco','cidade','contato')->get();
         return $clientes;
     }
 
