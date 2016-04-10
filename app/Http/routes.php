@@ -17,10 +17,13 @@ Route::get('/', function () {
 
 Route::get('/listaCli','ClienteController@listaCliJSON');
 
+Route::Get('/listaCidades','CidadeControlller@listaCidadeJSON');
+
 Route::get('/cliente',function() {
     return view('cliente.cliente');
 });
 
+Route::post('/cliente','ClienteController@salvaCliJSON');
 
 Route::group(['middleware' => ['web']], function () {
     Route::get('/listaCli','ClienteController@listaCliJSON');

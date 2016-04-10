@@ -14,4 +14,9 @@ class ClienteController extends Controller
         return $clientes;
     }
 
+    public function cadastrar(Request $request) {
+
+
+    }
+
 }

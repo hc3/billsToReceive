@@ -3,12 +3,47 @@
 <head>
     <title>Clientes</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width">
     <link href='/css/bootstrap-globo.min.css' rel="stylesheet">
     <link href='/css/bootstrap-responsive.min.css' rel="stylesheet">
+
 </head>
+<style>
+    .mysqlPaddingForm {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 3%;
+    }
+</style>
+
+<script>
+
+    $(document).ready(function() {
+        $('#modalCadCli').hide();
+        $('#fechaModal').hide();
+
+        function limpaModals() {
+            console.log("limpando modals");
+        }
+
+        $('#abreModal').on('click',function() {
+            $('#modalCadCli').show('slow');
+            $('#fechaModal').show('fast');
+        });
+
+        $('#fechaModal').on('click',function() {
+            limpaModals();
+            $('#modalCadCli').hide('slow');
+            $('#fechaModal').hide('fast');
+        });
+    });
+
+</script>
+
+
 <script>
     angular.module('cliente',[])
         .controller('clienteController',getJsonCli);
@@ -29,19 +64,18 @@
                 console.log('erro:',err);
             });
     };
-
     getJsonCli.$inject = ['$scope','$http'];
 </script>
 <body ng-app="cliente">
     <div class="jumbotron">
-
+        <!-- MENU -->
         <div class="container">
             <div class="navbar">
                 <div class="navbar-inner">
                     <a class="brand" href="#">Controle Financeiro</a>
                     <ul class="nav">
                         <li class="active"><a href="#">Início</a></li>
-                        <li><a href="#">ITEM1</a></li>
+                        <li><a href="/cadastro">ITEM1</a></li>
                         <li><a href="#">ITEM2</a></li>
                         <li><a href="#">ITEM3</a></li>
                         <li><a href="#">ITEM4</a></li>
@@ -51,80 +85,83 @@
                 </div>
             </div>
         </div>
+        <!-- FIM MENU -->
 
-
-        <!-- FORM CADASTRO -->
-        <div class="container" id="main">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">cadastrar cliente</h2>
-                </div>
-                <div class="panel-body"  style="padding-left: 3%">
-                    <form>
-                        <div class="row">
-
-                            <div class="form-group col-md-8">
-                                <label>Nome:</label>
-                                <input type="text" name="name" id="nome" class="form-control">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label>Cpf:</label>
-                                <input type="text" name="cpf" id="cpf" class="form-control">
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="form-group col-md-4">
-                                <label>Rua:</label>
-                                <input type="text" name="rua" id="rua" class="form-control">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label>Bairro:</label>
-                                <input type="text" name="bairro" id="bairro" class="form-control">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label>Cidade:</label>
-                                <input type="text" name="cidade" id="cidade" class="form-control">
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="form-group col-md-4">
-                                <label>Email</label>
-                                <input type="text" name="email" id="email" class="form-control">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label>Celular</label>
-                                <input type="text" name="celular" id="celular" class="form-control">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label>Fixo</label>
-                                <input type="text" name="fixo" id="fixo" class="form-control">
-                            </div>
-
-                        </div>
-
-                        </br>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary">Salvar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+        <div class="container">
+            <div>
+                <button class="demo btn btn-prymary btn-large" id="abreModal">Novo</button>
+                <button class="demo btn btn-prymary btn-large" id="fechaModal">Fechar</button>
             </div>
         </div>
-        <!-- FIM FORM CADASTRO -->
+    <div class="container" id="modalCadCli">
+        <div class="panel panel-default mysqlPaddingForm">
+            <form action="/clientes/cadastrar" method="post">
+                <div class="row">
 
+                    <div class="form-group col-md-8">
+                        <label>Nome:</label>
+                        <input type="text" name="name" id="nome" class="form-control" ng-model="Cliente.nome">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label>Cpf:</label>
+                        <input type="number" name="cpf" id="cpf" class="form-control" ng-model="Cliente.cpf">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group col-md-4">
+                        <label>Rua:</label>
+                        <input type="text" name="rua" id="rua" class="form-control" ng-model="Cliente.endereco.rua">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label>Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" class="form-control" ng-model="Cliente.endereco.bairro">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label>Cidade:</label>
+                        <select class="js-data-example-ajax">
+                            <option value="3620194" selected="selected">Salvador</option>
+                        </select>
+                        <!--
+                        <label>Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control">
+                        -->
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group col-md-4">
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" class="form-control" ng-model="Cliente.contato.email">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label>Celular</label>
+                        <input type="number" name="celular" id="celular" class="form-control" ng-model="Cliente.contato.celular">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label>Fixo</label>
+                        <input type="number" name="fixo" id="fixo" class="form-control" ng-model="Cliente.contato.fixo">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
         <div class="container">
             <div ng-controller="clienteController" class="panel panel-default">
                 <div class="panel-body">
@@ -164,6 +201,8 @@
             </div>
         </div>
     </div>
+
+
 
 </body>
 </html>
