@@ -10,7 +10,7 @@ use App\Http\Requests;
 class CidadeController extends Controller
 {
     public function listaCidadeJSON() {
-        $cidade = Cidade::all()->toJson();
+        $cidade = Cidade::with('estado')->get();
         return $cidade;
     }
 }

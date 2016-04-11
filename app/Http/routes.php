@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/listaCli','ClienteController@listaCliJSON');
 
-Route::Get('/listaCidades','CidadeControlller@listaCidadeJSON');
+Route::Get('/listaCidades','CidadeController@listaCidadeJSON');
 
 Route::get('/cliente',function() {
     return view('cliente.cliente');

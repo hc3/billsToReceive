@@ -1,22 +1,14 @@
-<!doctype html>
-<html ng-app="cliente">
-<head>
-    <title>Clientes</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
-    <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width">
-    <link href='/css/bootstrap-globo.min.css' rel="stylesheet">
-    <link href='/css/bootstrap-responsive.min.css' rel="stylesheet">
+@extends('template.template')
 
-</head>
+@section('content')
 <style>
     .mysqlPaddingForm {
         padding-left: 3%;
         padding-right: 3%;
         padding-top: 3%;
+        padding-bottom: 3%;
     }
+
 </style>
 
 <script>
@@ -26,7 +18,7 @@
         $('#fechaModal').hide();
 
         function limpaModals() {
-            console.log("limpando modals");
+            $('.form-control').val("");
         }
 
         $('#abreModal').on('click',function() {
@@ -39,54 +31,61 @@
             $('#modalCadCli').hide('slow');
             $('#fechaModal').hide('fast');
         });
+
+        $('#cadastrarCliente').on('click',function() {
+            limpaModals();
+        })
     });
 
 </script>
 
 
 <script>
-    angular.module('cliente',[])
+    angular.module('cliente',[],function($interpolateProvider) {
+        $interpolateProvider.startSymbol('<%');
+        $interpolateProvider.endSymbol('%>');
+    })
         .controller('clienteController',getJsonCli);
 
     function getJsonCli($scope,$http) {
 
-        var req = {
+        var reqCli = {
             url:'http://localhost:8000/listaCli',
             method:'GET'
         }
 
-        $http(req)
+        var reqCidade = {
+            url:'http://localhost:8000/listaCidades',
+            method:'GET'
+        }
+
+        $http(reqCli)
             .success(function(data) {
-                console.log(data);
                 $scope.Clientes = data
             })
             .error(function(err){
                 console.log('erro:',err);
             });
+
+        $http(reqCidade)
+            .success(function(data){
+                $scope.Cidades = data
+            })
+            .error(function(err){
+                console.log('erro:',err);
+            });
+
+        $scope.adicionarCliente = function(Cliente) {
+            $scope.Clientes.push(angular.copy(Cliente));
+        };
+        $scope.removeCliente = function(cliente) {
+           // $scope.Cliente.splice(cliente);
+            console.log(cliente);
+        }
     };
     getJsonCli.$inject = ['$scope','$http'];
 </script>
-<body ng-app="cliente">
-    <div class="jumbotron">
-        <!-- MENU -->
-        <div class="container">
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <a class="brand" href="#">Controle Financeiro</a>
-                    <ul class="nav">
-                        <li class="active"><a href="#">Início</a></li>
-                        <li><a href="/cadastro">ITEM1</a></li>
-                        <li><a href="#">ITEM2</a></li>
-                        <li><a href="#">ITEM3</a></li>
-                        <li><a href="#">ITEM4</a></li>
-                        <li><a href="#">ITEM5</a></li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- FIM MENU -->
-
+    <div class="jumbotron" ng-app="cliente" ng-controller="clienteController">
         <div class="container">
             <div>
                 <button class="demo btn btn-prymary btn-large" id="abreModal">Novo</button>
@@ -95,17 +94,18 @@
         </div>
     <div class="container" id="modalCadCli">
         <div class="panel panel-default mysqlPaddingForm">
-            <form action="/clientes/cadastrar" method="post">
+            <form>
+                <% Cliente %>
                 <div class="row">
 
                     <div class="form-group col-md-8">
                         <label>Nome:</label>
-                        <input type="text" name="name" id="nome" class="form-control" ng-model="Cliente.nome">
+                        <input type="text" class="form-control" ng-model="Cliente.nome" >
                     </div>
 
                     <div class="form-group col-md-4">
                         <label>Cpf:</label>
-                        <input type="number" name="cpf" id="cpf" class="form-control" ng-model="Cliente.cpf">
+                        <input type="number" class="form-control" ng-model="Cliente.cpf">
                     </div>
 
                 </div>
@@ -114,7 +114,7 @@
 
                     <div class="form-group col-md-4">
                         <label>Rua:</label>
-                        <input type="text" name="rua" id="rua" class="form-control" ng-model="Cliente.endereco.rua">
+                        <input type="text" class="form-control" ng-model="Cliente.endereco.rua">
                     </div>
 
                     <div class="form-group col-md-4">
@@ -124,13 +124,9 @@
 
                     <div class="form-group col-md-4">
                         <label>Cidade:</label>
-                        <select class="js-data-example-ajax">
-                            <option value="3620194" selected="selected">Salvador</option>
+                        <select ng-model="Cliente.cidade" ng-options="cidade.nome for cidade in Cidades" class="form-control">
+                            <option value="">Selecione uma cidade</option>
                         </select>
-                        <!--
-                        <label>Cidade:</label>
-                        <input type="text" name="cidade" id="cidade" class="form-control">
-                        -->
                     </div>
 
                 </div>
@@ -156,14 +152,15 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Salvar</button>
+                        <button ng-click="adicionarCliente(Cliente)" type="submit" class="btn btn-primary" id="cadastrarCliente">Salvar</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+        </br>
         <div class="container">
-            <div ng-controller="clienteController" class="panel panel-default">
+            <div class="panel panel-default">
                 <div class="panel-body">
                     <table class='table'>
                         <tr>
@@ -175,11 +172,11 @@
 
                         </tr>
                         <tr ng-repeat="cliente in Clientes">
-                            <td>{{ cliente.nome }}</td>
-                            <td>{{ cliente.cpf }}</td>
-                            <td>{{ cliente.cidade.nome }}</td>
-                            <td>{{ cliente.contato.email }}</td>
-                            <td>{{ cliente.endereco.bairro }}</td>
+                            <td><% cliente.nome %></td>
+                            <td><% cliente.cpf %></td>
+                            <td><% cliente.cidade.nome %></td>
+                            <td><% cliente.contato.email %></td>
+                            <td><% cliente.endereco.bairro %></td>
                             <td>
                                 <a>
                                     <span class="glyphicon glyphicon-eye-open"></span>
@@ -192,7 +189,7 @@
                             </td>
                             <td>
                                 <a>
-                                    <span class="glyphicon glyphicon-trash"></span>
+                                    <span ng-click="removeCliente(cliente)" class="glyphicon glyphicon-trash"></span>
                                 </a>
                             </td>
                         </tr>
@@ -201,8 +198,4 @@
             </div>
         </div>
     </div>
-
-
-
-</body>
-</html>
+@stop

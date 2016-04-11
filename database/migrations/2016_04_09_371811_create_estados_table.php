@@ -13,10 +13,9 @@ class CreateEstadosTable extends Migration
     public function up()
     {
         Schema::create('estados', function (Blueprint $table) {
+            $table->integer('id');
             $table->string('UF');
             $table->string('nome');
-            $table->integer('codigo_uf_ibge');
-            $table->timestamps();
             $table->primary('UF');
         });
     }
