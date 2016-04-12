@@ -45,7 +45,7 @@
         $interpolateProvider.startSymbol('<%');
         $interpolateProvider.endSymbol('%>');
     })
-        .controller('clienteController',getJsonCli);
+        .controller('ClienteController',getJsonCli);
 
     function getJsonCli($scope,$http) {
 
@@ -75,17 +75,49 @@
                 console.log('erro:',err);
             });
 
-        $scope.adicionarCliente = function(Cliente) {
-            $scope.Clientes.push(angular.copy(Cliente));
-        };
+        $scope.inserirCliente = function() {
+
+            $http({
+                method: 'POST',
+                url: 'http://localhost:8000/saveCli',
+                data: {name: 'text'}
+            })
+            .success(function () {
+                console.log('true');
+
+            })
+            .error(function () {
+                console.log('false');
+            })
+        }
+
         $scope.removeCliente = function(cliente) {
+
            // $scope.Cliente.splice(cliente);
             console.log(cliente);
         }
     };
+
+    /**
+     *
+     * function() {
+            var data = $.param({
+                json:{
+                   nome:$scope.Cliente.nome
+                  ,cpf:$scope.Cliente.cpf
+                  ,email:$scope.Cliente.contato.email
+                  ,fixo: $scope.Cliente.contato.fixo
+                  ,celular: $scope.Cliente.contato.celular
+                }
+        });;
+            console.log(data);
+
+        };
+     * @type {string[]}
+     */
     getJsonCli.$inject = ['$scope','$http'];
 </script>
-    <div class="jumbotron" ng-app="cliente" ng-controller="clienteController">
+    <div class="jumbotron" ng-app="cliente" ng-controller="ClienteController">
         <div class="container">
             <div>
                 <button class="demo btn btn-prymary btn-large" id="abreModal">Novo</button>
@@ -94,7 +126,8 @@
         </div>
     <div class="container" id="modalCadCli">
         <div class="panel panel-default mysqlPaddingForm">
-            <form>
+            <form ng-submit="inserirCliente()">
+                <input type="hidden"name="_token" value="{{{ csrf_token() }}}" />
                 <% Cliente %>
                 <div class="row">
 
@@ -152,7 +185,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <button ng-click="adicionarCliente(Cliente)" type="submit" class="btn btn-primary" id="cadastrarCliente">Salvar</button>
+                        <button type="submit" class="btn btn-primary" id="submit" value="submit">Salvar</button>
                     </div>
                 </div>
             </form>
